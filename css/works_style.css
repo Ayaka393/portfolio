@@ -1,0 +1,406 @@
+@charset "UTF-8";
+
+/*すべてのWebページに適用される*/
+html{
+	font-family:sans-serif;
+}
+html * {
+	box-sizing:border-box;
+}
+
+body{
+    font-family: "Kaisei Decol", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h2{
+    all: unset; /* デフォルトスタイルのリセット */
+    font-size:50px;
+    font-weight: 500;
+    border-bottom: 5px dotted #585858; 
+    margin: 0 0 20px 20px;
+}
+  
+
+/* 背景カラー*/
+
+body{
+    margin:0;
+	background-color: #cccccc;
+}
+
+
+/* 背景の余白　全体 */
+main{
+    margin:100px 20px 10px 20px;
+}
+
+.footer{
+    margin:20px;
+}
+
+
+/* フェードイン */
+.sns_icon_item, .logo_item, .app_icon_item, .sns_header_item, .flyer_item, .ad_item {
+    opacity: 0;
+    transform: translateY(20px); /* 少し下に移動した状態からフェードイン */
+    transition: all 1.0s ease-out;
+}
+
+.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* 固定ナビゲーションバー */
+.fixed_nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.8); /* 黒い帯 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000; 
+} 
+.fixed_nav a {
+    color: #fff;
+    text-decoration: none;
+
+}
+        .fixed_nav a:hover {
+            color: #ccc; 
+        }
+.nav_left {
+    flex: 1;
+    text-align: left;
+}
+.nav_left img{
+   max-width: 110px;
+}
+.nav_right {
+    flex: 2;
+    text-align: right;
+    margin:0 30px 0 0;
+}
+.nav_right a {
+    margin: 0 20px;
+    padding:22px 17px;
+}
+.nav_right span {
+    color: #fff;
+}
+
+.now_nav {
+    background-image: url(../images/cat_background.png);
+    z-index: -1;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.now{
+    background-color: #585858;
+}
+        .mobile_menu a:hover{
+            background-color: #ff50c2;
+        }
+
+/* スマホサイズのハンバーガーメニューアイコン */
+.mobile_menu_icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    color: #fff;
+}
+
+
+/* ハンバーガーメニューのスタイル */
+.mobile_menu {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: fixed;
+    top: 70px; 
+    right: 0;
+    width: 200px;
+    z-index: 1000;
+}
+.mobile_menu.active {
+    display: flex;
+}
+.mobile_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mobile_menu ul li {
+    border-bottom: 1px solid #fff;
+}
+.mobile_menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+
+/* ねこ */
+.cat_all {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+}
+
+.cat {
+    width: 100px; 
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    cursor: url(../images/cat_cursor_32.png), auto;
+}
+
+/* 吹き出しのスタイル */
+.back {
+    position: absolute;
+    bottom: -220px; /* 猫の上に配置 */
+    right:-450px;
+    width:1000px;
+    height:auto;
+    transform: scale(0); /* 初期状態は非表示（縮小） */
+    transform-origin:center; 
+    transition: transform 0.2s ease-out; 
+    cursor: url(../images/cat_cursor_32.png), auto;
+}
+
+
+/* ホバー時に吹き出しが拡大 */
+        .cat_all:hover .back  {
+            transform: scale(0.15);
+        }
+
+
+/* List_style */
+
+    /* icon.html */
+        .sns_icon_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin:10px 20px 10px 20px;
+        }
+        .sns_icon_item{
+            width: 30%; 
+            margin: 10px 0;
+            text-align: center;
+        }
+        .sns_icon_img img {
+            max-width: 100%; 
+            height: auto; 
+            box-shadow: 7px 7px 7px #6f6f6f;
+        }
+
+        .logo_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin:10px 20px 10px 20px;
+        }
+        .logo_item{
+            width: 30%; 
+            margin: 10px 0;
+            text-align: center;
+        }
+        .logo_img img {
+            max-width: 100%; 
+            height: auto; 
+            box-shadow: 7px 7px 7px #6f6f6f;
+        }
+
+        .app_icon_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin:10px 20px 10px 20px;
+        }
+        .app_icon_item{
+            width: 30%; 
+            margin: 10px 0;
+            text-align: center;
+        }
+        .app_icon_img img {
+            max-width: 100%; 
+            height: auto; 
+            box-shadow: 7px 7px 7px #6f6f6f;
+        }
+
+    /* header.html */
+        .sns_header_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin:10px 20px 10px 20px;
+        }
+        .sns_header_item{
+            width: 47%; 
+            margin: 10px 0;
+            text-align: center;
+        }
+        .sns_header_img img {
+            max-width: 100%; 
+            height: auto; 
+            box-shadow: 7px 7px 7px #6f6f6f;
+        }
+
+    /* flyer.html */
+        .flyer_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin:10px 20px 10px 20px;
+        }
+        .flyer_item{
+            width: 30%; 
+            margin: 10px 0;
+            text-align: center;
+        }
+        .flyer_img img {
+            max-width: 100%; 
+            height: auto; 
+            box-shadow: 7px 7px 7px #6f6f6f;
+        }
+    
+    /* others.html */
+        .ad_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin:10px 20px 10px 20px;   
+        }
+        .ad_item{
+            width: 30%; 
+            margin: 10px 0;
+            text-align: center;
+        }
+        .ad_img img {
+            max-width: 100%; 
+            height: auto; 
+            box-shadow: 7px 7px 7px #6f6f6f;
+        }
+
+    /* スクロールアニメーション */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10; 
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        
+        .scroll_animation {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+         
+        .white_line {
+            width: 4px;
+            height: 50px;
+            background-image: -webkit-linear-gradient(45deg,#ff16ad 0%, #b7b7b7 60%, #ffffff 100% );
+            margin-bottom: 30px;
+            animation: arrow-move 1.5s infinite;
+        }
+        
+        .scroll_text {
+            color: #ffffff;
+            font-size: 50px;
+            opacity: 1;
+            animation: fade-text 3.0s forwards;
+        }
+        
+        /* 白い線が上下に動く */
+        @keyframes arrow-move {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(40px); }
+            100% { transform: translateY(0); }
+        }
+        
+        /* フェードアウト・インの繰り返し */
+        @keyframes fade-in-out {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        /* 全体　フェードアウト　*/
+        @keyframes fade-text {
+            0% { opacity: 1; }
+            95%{ opacity:0.9}
+            100% { opacity: 0; }
+        }
+
+/* ------------------------------------------------------------------------------------*/
+/* レスポンシブデザイン：画面サイズが小さい場合のスタイル */
+
+@media screen and (max-width: 780px) {
+
+    h2{
+        font-size:35px;
+        font-weight: 500;
+        border-bottom: 5px dotted #585858; 
+        margin:0 0 10px 20px;
+    }
+
+/* ヘッダー */
+     /* ハンバーガーメニューを表示 */
+     .mobile_menu_icon {
+        display: block;
+    }
+
+    /* 通常のナビゲーションバーは非表示に */
+    .nav_right {
+        display: none;
+    }
+
+
+/* スクロールしても固定されるナビゲーションバー */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+    .sns_icon_item{
+        width: 47%;
+    }
+    .logo_item{
+        width: 47%;
+    }
+    .app_icon_item{
+        width: 47%;
+    }
+    .sns_header_item{
+        width: 95%;
+    }
+    .flyer_item{
+        width: 47%;
+    }
+    .ad_item{
+        width: 47%;
+    }
+}

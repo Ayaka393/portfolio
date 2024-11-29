@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1041.44 250.54">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #231815;
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        font-family: OldDreadfulNo7BT-Regular, 'OldDreadfulNo7 BT';
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        font-size: 106.36px;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 9px;
+      }
+
+      .cls-3 {
+        fill: #ed1e79;
+        font-size: 220.03px;
+      }
+
+      .cls-5 {
+        fill: #fcee21;
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_2" data-name="レイヤー 2">
+    <text class="cls-3" transform="translate(20.91 194.46) scale(.4 1)"><tspan x="0" y="0">YOSHIDA AYAKA</tspan></text>
+  </g>
+  <g id="_レイヤー_1" data-name="レイヤー 1">
+    <g>
+      <text class="cls-4" transform="translate(19.84 193.07) scale(.83 1)"><tspan x="0" y="0">YOSHIDA AYAKA</tspan></text>
+      <text class="cls-2" transform="translate(19.84 193.07) scale(.83 1)"><tspan x="0" y="0">YOSHIDA AYAKA</tspan></text>
+      <text class="cls-1" transform="translate(19.84 193.07) scale(.83 1)"><tspan x="0" y="0">YOSHIDA AYAKA</tspan></text>
+      <text class="cls-4" transform="translate(19.84 193.07) scale(.83 1)"><tspan x="0" y="0">YOSHIDA AYAKA</tspan></text>
+    </g>
+  </g>
+  <g id="_レイヤー_3" data-name="レイヤー 3">
+    <polygon class="cls-5" points="20.91 96.83 23.93 114.72 41.83 117.74 23.93 120.76 20.91 138.65 17.89 120.76 0 117.74 17.89 114.72 20.91 96.83"/>
+    <polygon class="cls-5" points="597.56 93.81 600.58 111.7 618.47 114.72 600.58 117.74 597.56 135.63 594.54 117.74 576.65 114.72 594.54 111.7 597.56 93.81"/>
+  </g>
+</svg>
