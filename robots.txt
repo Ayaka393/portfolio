@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yoshida-ayaka-portfolio.vercel.app/sitemap.xml
