@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://yoshida-ayaka-portfolio.vercel.app/index.html">
+    <url>
+        <loc>https://yoshida-ayaka-portfolio.vercel.app/more.html</loc>
+        <lastmod>2024-12-15</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://yoshida-ayaka-portfolio.vercel.app/icon.html</loc>
+        <lastmod>2024-12-15</lastmod>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://yoshida-ayaka-portfolio.vercel.app/header.html</loc>
+        <lastmod>2024-12-15</lastmod>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://yoshida-ayaka-portfolio.vercel.app/others.html</loc>
+        <lastmod>2024-12-15</lastmod>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://yoshida-ayaka-portfolio.vercel.app/flyer.html</loc>
+        <lastmod>2024-12-15</lastmod>
+        <priority>0.4</priority>
+    </url>
+</urlset>
