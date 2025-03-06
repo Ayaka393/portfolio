@@ -242,6 +242,14 @@ h1.logo{
 			.contact1:hover {
 				content: url("../images/CONTACT2.png");
 			}
+				/* タッチデバイスでは無効にする */
+					@media (hover: none) {
+						.about1:hover,
+						.works1:hover,
+						.contact1:hover {
+							content: none; 
+						}
+					}
 
 .viewprofile {
 	text-align: right;
