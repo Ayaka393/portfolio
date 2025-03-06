@@ -270,6 +270,13 @@ h1.logo{
 				animation: fade-in 0.3s forwards;
 			}
 
+				/* タッチデバイスでは無効にする */
+					@media (hover: none) {
+						.viewprofile img:hover {
+							content: none; 
+						}
+					}
+
 /* works */
 .works_list{
 	display: flex;
@@ -354,6 +361,16 @@ h1.logo{
 				content: url("../images/Twitter_black.png");
 				width:40%;
 			}  
+
+				/* タッチデバイスでは無効にする */
+					@media (hover: none) {
+						.sns_list_item:first-child img:hover,
+						.sns_list_item:first-child(2) img:hover,
+						.sns_list_item:first-child(3) img:hover,
+						.sns_list_item:first-child(4) img:hover {
+							content: none; 
+						}
+					}
 
 .footer_cat{
 	position:relative;
